@@ -42,7 +42,7 @@ Built with a robust Python ecosystem, the application leverages historical fligh
 
 ```bash
 # Clone the repository
-git clone https://github.com/Arnab-Ghosh7/Flight_Price_Predication.git
+git clone https://github.com/Arnab-Ghosh7/Flight_Price_Predication
 cd Flight_Price_Predication
 
 # Create a virtual environment (optional but recommended)
