@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Flight Price Prediction</title>
+    <style>
+        body { font-family: Arial; background: #f4f4f4; }
+        .container {
+            width: 40%;
+            margin: auto;
+            background: white;
+            padding: 20px;
+            margin-top: 50px;
+            border-radius: 8px;
+        }
+        input, select {
+            width: 100%;
+            padding: 8px;
+            margin: 6px 0;
+        }
+        button {
+            width: 100%;
+            padding: 10px;
+            background: #007bff;
+            color: white;
+            border: none;
+            font-size: 16px;
+        }
+        h2 { text-align: center; }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <h2>Flight Price Prediction</h2>
+
+    <form action="/predict" method="post">
+        <input name="Airline" placeholder="Airline" required>
+        <input name="Date_of_Journey" placeholder="Date (DD/MM/YYYY)" required>
+        <input name="Source" placeholder="Source" required>
+        <input name="Destination" placeholder="Destination" required>
+        <input name="Route" placeholder="Route (e.g. DEL → BOM)" required>
+        <input name="Dep_Time" placeholder="Departure Time (HH:MM)" required>
+        <input name="Arrival_Time" placeholder="Arrival Time (HH:MM)" required>
+        <input name="Duration" placeholder="Duration (e.g. 2h 30m)" required>
+        <input name="Total_Stops" placeholder="Total Stops (e.g. 1 stop)" required>
+        <input name="Additional_Info" placeholder="Additional Info" required>
+
+        <button type="submit">Predict Price</button>
+    </form>
+
+    <h3 style="text-align:center;">{{ prediction_text }}</h3>
+</div>
+
+</body>
+</html>
