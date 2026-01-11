@@ -7,7 +7,15 @@
 ---
 
 ## 📖 Overview
+**Flight Price Prediction** is a comprehensive, end-to-end machine learning solution designed to address the unpredictability of airfare prices. Airline ticket costs fluctuate significantly due to demand, seasonality, route complexity, and airline-specific dynamics. This project aims to bring transparency to these fluctuations by providing users with accurate, data-driven price estimates.
 
+Built with a robust Python ecosystem, the application leverages historical flight data to train advanced regression models. It features a complete production pipeline—from raw data ingestion and extensive feature engineering to model serialization and deployment via a **Flask** web interface.
+
+**Key Highlights:**
+- **Full-Stack ML Pipeline:** Orchestrates data loading, cleaning, transformation, and model training in a modular fashion.
+- **Advanced Feature Engineering:** Extracts rich insights from timestamps (e.g., journey day/month, departure times) and complex categorical data (routes, stops).
+- **Interactive Web UI:** Users can input specific travel details (Airline, Source, Destination, Stops, etc.) into a clean web form to get instant price predictions.
+- **Reproducible Data Science:** Includes `Makefile` commands, `requirements.txt`, and clear directory structures to ensure the analysis can be easily reproduced.
 
 
 ---
